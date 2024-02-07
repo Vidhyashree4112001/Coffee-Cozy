@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body>
+ <!-- Responsive Navbar -->
+ 
+<header class="bg-yellow-900">
+    <nav class="flex justify-between items-center w-[92%]  mx-auto">
+        <div>
+            <h1 class=" font-extrabold text-3xl text-yellow-300 font-serif p-5 ">The Coffee Cozy</h1>
+        </div>
+        <div
+            class="nav-links duration-500 md:static absolute bg-yellow-900 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5 ">
+            <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                <li>
+                    <a class="hover:underline hover:text-yellow-500 font-bold text-yellow-400 " href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="hover:underline hover:text-yellow-500 font-bold text-yellow-400" href="products.html">Products</a>
+                </li>
+                <li>
+                    <a class="hover:underline hover:text-yellow-500 font-bold text-yellow-400" href="contact.html">Contact</a>
+                </li>
+               
+            </ul>
+        </div>
+        <div class="flex items-center gap-6">
+           
+            <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+        </div>
+    </nav>
+</header><hr>
+
+<script>
+    const navLinks = document.querySelector('.nav-links')
+    function onToggleMenu(e){
+        e.name = e.name === 'menu' ? 'close' : 'menu'
+        navLinks.classList.toggle('top-[9%]')
+    }
+</script>
+<!-- Header -->
+<div><img class="w-screen" src="./image/The Coffee Cozy.jpg" alt=""></div>
+<hr>
+<section class="p-4 text-center bg-gradient-to-r from-yellow-500 to-yellow-200">
+  <h1 class=" p-3 text-3xl font-extrabold text-yellow-900 font-serif">Select your preferred coffee blend</h1>
+  <p class="text-white font-extrabold" >&</p>
+  <p class="text-2xl font-extrabold text-yellow-900 font-serif">Share your top pick!</p>
+  <br>
+    <div class="grid grid-cols-2 md:grid-cols-4 mt-10 gap-10">
+        <div>
+            <img src="./image/coffee1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-full shadow-2xl w-60"
+                alt="">
+            <h1 class="text-xl font-bold font-serif mt-2">Arabica</h1>
+            <p class="text-yellow-100 font-extrabold">$100</p>
+        </div>
+        <div>
+            <img src="./image/coffee2.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-full shadow-2xl w-60"
+                alt="">
+            <h1 class="text-xl font-bold font-serif mt-2">Costa Rican</h1>
+            <p class="text-yellow-100 font-extrabold">$80</p>
+        </div>
+        <div>
+            <img src="./image/coffee3.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-full shadow-2xl w-60">
+            <h1 class="text-xl font-bold font-serif mt-2">Jamaican Blue Mountain</h1>
+            <p class="text-yellow-100 font-extrabold">$65</p>
+        </div>
+        <div>
+            <img src="./image/coffee4.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-full shadow-2xl w-60"
+                alt="">
+            <h1 class="text-xl font-bold font-serif mt-2">Robusta</h1>
+            <p class="text-yellow-100 font-extrabold">$50</p>
+        </div>
+        <div>
+            <img src="./image/coffee5.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-full shadow-2xl w-60"
+                alt="">
+            <h1 class="text-xl font-bold font-serif mt-2">Kenyan</h1>
+            <p class="text-yellow-100 font-extrabold">$90</p>
+        </div>
+        <div>
+            <img src="./image/coffee6.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-full shadow-2xl w-60"
+                alt="">
+            <h1 class="text-xl font-bold font-serif mt-2">Indian Mysore Nuggets</h1>
+            <p class="text-yellow-100 font-extrabold ">$70</p>
+        </div>
+        <div>
+            <img src="./image/coffee9.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-full shadow-2xl w-60"
+                alt="">
+            <h1 class="text-xl font-bold font-serif mt-2">Icy Vanilla Latte</h1>
+            <p class="text-yellow-100 font-extrabold ">$70</p>
+        </div>
+        <div>
+            <img src="./image/coffee7.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-full shadow-2xl w-60"
+                alt="">
+            <h1 class="text-xl font-bold font-serif mt-2">Frosty Mocha</h1>
+            <p class="text-yellow-100 font-extrabold ">$50</p>
+        </div>
+        <div>
+            <img src="./image/coffee3.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-full shadow-2xl w-60"
+                alt="">
+            <h1 class="text-xl font-bold font-serif mt-2">Milk Mocha</h1>
+            <p class="text-yellow-100 font-extrabold ">$70</p>
+        </div>
+        <div>
+            <img src="./image/coffee1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-full shadow-2xl w-60"
+                alt="">
+            <h1 class="text-xl font-bold font-serif mt-2">Choco Lite</h1>
+            <p class="text-yellow-100 font-extrabold ">$50</p>
+        </div>
+        <div>
+            <img src="./image/coffee9.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-full shadow-2xl w-60"
+                alt="">
+            <h1 class="text-xl font-bold font-serif mt-2">Vanilla Latte</h1>
+            <p class="text-yellow-100 font-extrabold ">$70</p>
+        </div>
+        <div>
+            <img src="./image/coffee4.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-full shadow-2xl w-60"
+                alt="">
+            <h1 class="text-xl font-bold font-serif mt-2">Cappechino Elite</h1>
+            <p class="text-yellow-100 font-extrabold">$100</p>
+        </div>
+    </div>
+</section>
+<hr>
+<section class="bg-yellow-900 flex p-4 flex-col gap-2">
+    <h1 class="text-2xl font-bold text-yellow-300 font-serif mt-2">The Coffee Cozy</h1>
+    <p class="font-serif text-black ">Join us at The Coffee Cozy, where every cup is brewed with passion and served with a smile. Indulge in the warmth of our welcoming ambiance and savor the finest coffee experience. Your journey to coffee perfection starts here.</p>
+  <p class="font-bold text-yellow-300">@2024 Thecoffeecozy.com</p>
+</section>
+
+</body>
+</html>

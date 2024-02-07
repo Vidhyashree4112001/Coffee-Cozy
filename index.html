@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body>
+
+<!-- Responsive Navbar -->
+    <header class="bg-yellow-900">
+        <nav class="flex justify-between items-center w-[92%]  mx-auto">
+            <div>
+                <h1 class=" font-extrabold text-3xl text-yellow-300 font-serif p-5 ">The Coffee Cozy</h1>
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute bg-yellow-900 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5 ">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a class="hover:underline hover:text-yellow-500 font-bold text-yellow-400 " href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:underline hover:text-yellow-500 font-bold text-yellow-400" href="products.html">Products</a>
+                    </li>
+                    <li>
+                        <a class="hover:underline hover:text-yellow-500 font-bold text-yellow-400" href="contact.html">Contact</a>
+                    </li>
+                   
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+               
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
+    </header><hr>
+    
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+
+    <!-- Header -->
+    <section class="bg-yellow-500 p-4 md:p-10 flex justify-center ">
+        <div>
+            <p class=" p-8 font-serif font-bold text-yellow-100 text-center">Welcome to Coffee Cozy, where the aroma of
+                freshly brewed coffee blends with the scent of baking pastries in a cozy, inviting space. Enjoy expertly
+                crafted specialty coffee and delectable treats, all served in a warm and friendly atmosphere perfect for
+                catching up with friends or finding a moment of tranquility.</p>
+            <h2 class="font-bold text-4xl md:text-5xl mb-5 text-yellow-900 font-serif">Coffee first,<br>Schemes later!
+            </h2>
+            <div>
+                <button
+                    class="bg-yellow-300 rounded-full p-4 text-yellow-900 font-extrabold shadow-md transition ease-in-out delay-150 bg-yellow-300 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-600 duration-200 ">Shop
+                    Now</button>
+
+                <button
+                    class="bg-yellow-800 rounded-full p-4 text-yellow-300 shadow-md font-extrabold ml-10 transition ease-in-out delay-150 bg-yellow-900 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-700 duration-200 ">Explore
+                    More --></button>
+            </div>
+            <p class="mt-5 text-xl font-serif text-yellow-700">160+ Coffee Varieties | 100+ Clients </p>
+        </div>
+        <div class="hidden md:block p-5">
+            <img src="./image/coffee.jpg" alt="header img" class="rounded-b-full">
+        </div>
+    </section>
+
+    <div><img src="./image/@thecoffeecozy.jpg" alt=""></div>
+    
+    <!-- Our best Sellers -->
+    <section class="p-4 text-center bg-gradient-to-r from-yellow-500 to-yellow-200">
+        <h1 class="font-bold p-10 text-3xl text-yellow-900 font-serif">Our Most Underrated Seller</h1>
+        <hr class="shadow-2xl">
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-10 gap-5">
+            <div>
+                <img src="./image/coffee1.jpg"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-full shadow-2xl w-60" alt="">
+                <h1 class="text-xl font-bold font-serif mt-2">Arabica</h1>
+                <p class="text-yellow-100 font-extrabold">$100</p>
+            </div>
+            <div>
+                <img src="./image/coffee2.jpg"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-full shadow-2xl w-60" alt="">
+                <h1 class="text-xl font-bold font-serif mt-2">Costa Rican</h1>
+                <p class="text-yellow-100 font-extrabold">$80</p>
+            </div>
+            <div>
+                <img src="./image/coffee3.jpg"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-full shadow-2xl w-60">
+                <h1 class="text-xl font-bold font-serif mt-2">Jamaican Blue Mountain</h1>
+                <p class="text-yellow-100 font-extrabold">$65</p>
+            </div>
+            <div>
+                <img src="./image/coffee4.jpg"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-full shadow-2xl w-60" alt="">
+                <h1 class="text-xl font-bold font-serif mt-2">Robusta</h1>
+                <p class="text-yellow-100 font-extrabold">$50</p>
+            </div>
+            <div>
+                <img src="./image/coffee5.jpg"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-full shadow-2xl w-60" alt="">
+                <h1 class="text-xl font-bold font-serif mt-2">Kenyan</h1>
+                <p class="text-yellow-100 font-extrabold">$90</p>
+            </div>
+            <div>
+                <img src="./image/coffee6.jpg"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-full shadow-2xl w-60" alt="">
+                <h1 class="text-xl font-bold font-serif mt-2">Indian Mysore Nuggets</h1>
+                <p class="text-yellow-100 font-extrabold ">$70</p>
+            </div>
+            <div>
+                <img src="./image/coffee9.jpg"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-full shadow-2xl w-60" alt="">
+                <h1 class="text-xl font-bold font-serif mt-2">Icy Vanilla Latte</h1>
+                <p class="text-yellow-100 font-extrabold ">$70</p>
+            </div>
+            <div>
+                <img src="./image/coffee7.jpg"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 rounded-full shadow-2xl w-60" alt="">
+                <h1 class="text-xl font-bold font-serif mt-2">Frosty Mocha</h1>
+                <p class="text-yellow-100 font-extrabold ">$50</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- About Us Section -->
+    <section class="text-center p-10 bg-gradient-to-t from-yellow-900 to-yellow-300">
+        <h1 class="text-4xl font-bold mt-5 font-serif text-yellow-900">About Us</h1>
+        <p class="text-xl text-yellow-800 font-serif">This site is for those who admire the beauty and harmony of nature
+        </p>
+        <div class="md:flex p-5">
+            <div class="border border-b-2 rounded-2xl p-2 m-6 p-3">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-10 inline">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                </svg>
+                <h2 class="text-xl font-extrabold text-black font-serif m-5 text-yellow-400 ">Amazing Deals</h2>
+                <p class="font-serif">Discover special offers at The Coffee Cozy! Enjoy Buy One, Get One Free, Happy
+                    Hour discounts, and a Loyalty Program. With daily specials and seasonal promotions, there's always
+                    something brewing just for you.At The Coffee Cozy, there's always something special brewing just for
+                    you.</p>
+
+            </div>
+            <div class="border border-b-2 p-2 m-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-10 inline">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 0 0 3.7 3.7 48.656 48.656 0 0 0 7.324 0 4.006 4.006 0 0 0 3.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3-3 3" />
+                </svg>
+
+                <h2 class="text-xl font-extrabold text-black font-serif m-5 text-yellow-400 ">Free and Fast Shipping
+                </h2>
+                <p class="font-serif">Experience the convenience of free and fast shipping at The Coffee Cozy! Enjoy
+                    prompt delivery of your favorite coffee blends and accessories right to your doorstep, without any
+                    extra cost. Shop with us and savor your coffee moments sooner.</p>
+
+            </div>
+            <div class="border border-b-2 p-2 m-6 rounded-2xl">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-10 inline">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0 6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
+                </svg>
+
+                <h2 class="text-xl font-extrabold text-yellow-40g0 font-serif m-5">24/7 Support</h2>
+                <p class="font-serif">At The Coffee Cozy, we provide round-the-clock support to ensure your
+                    satisfaction. Whether you have questions about our products, need assistance with an order, or seek
+                    recommendations, our dedicated team is here to help you, 24/7. Experience unparalleled customer
+                    service whenever you need it.</p>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="text-center bg-yellow-900 p-10">
+        <h1 class="text-3xl font-bold mt-5 text-center font-serif text-yellow-400">Join our News Letter</h1>
+        <p class="font-serif text-xl text-gray-200">Signup for our email newspaper to get exclusive discounts, updates,
+            and more</p>
+        <input type="text" class="border border-none p-2 m-3"
+            placeholder="Coffee is a language in itself...Whats yours?" style="width: 80%;"><br>
+        <button
+            class="bg-yellow-400 rounded-full pl-10 pr-10 pt-2 pb-2 text-yellow-900 font-extrabold shadow-md transition ease-in-out delay-150 bg-yellow-300 hover:-translate-y-1 hover:scale-110 hover:bg-yellow-600 duration-200 ">Subscribe</button>
+    </section>
+    <hr>
+
+
+    <section class="bg-yellow-500 flex p-4 flex-col gap-2">
+        <h1 class="text-2xl font-bold text-yellow-900 font-serif mt-2">The Coffee Cozy</h1>
+        <p class="font-serif text-sx text-yellow-900 ">Join us at The Coffee Cozy, where every cup is brewed with
+            passion and served with a smile. Indulge in the warmth of our welcoming ambiance and savor the finest coffee
+            experience. Your journey to coffee perfection starts here.</p>
+        <p class="font-bold text-yellow-900">@2024 Thecoffeecozy.com</p>
+    </section>
+
+   
+
+
+</body>
+
+</html>
